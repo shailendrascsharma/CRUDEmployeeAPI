@@ -7,9 +7,9 @@ using CRUDEmployeeAPI.Models;
 
 namespace CRUDEmployeeAPI.Validations
 {
-    public class DeveloperValidator : AbstractValidator<Employee>
+    public class EmployeeValidator : AbstractValidator<Employee>
     {
-        public DeveloperValidator()
+        public EmployeeValidator()
         {
             RuleFor(p => p.FirstName).NotEmpty().WithMessage("FirstName should not be empty."); 
             RuleFor(p => p.Email).NotEmpty().WithMessage("Email should not be empty."); ;
